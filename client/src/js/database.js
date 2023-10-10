@@ -26,7 +26,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore('jate');
 
   // Use the .put() method on the store and pass in the content
-  const request = store.put({ content });
+  const request = store.put({ id:1 , value: content });
 
   // Get confirmation of the request
   const result = await request;
@@ -35,24 +35,30 @@ export const putDb = async (content) => {
 
 // Adds logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.log('GET from the jate database');
+  console.log('Alex GET from the jate database');
 
   // Create a connection to the database database and version we want to use.
   const jateDb = await openDB('jate', 1);
-
+  // console.log('A1')
   // Create a new transaction and specify the database and data privileges.
   const tx = jateDb.transaction('jate', 'readonly');
+  // console.log('A')
 
   // Open up the desired object store.
-  const store = tx.objectStore('cate');
-
+  const store = tx.objectStore('jate');
+// console.log('B')
   // Use the .getAll() method to get all data in the database.
-  const request = store.getAll();
-
+  const request = store.get(1);
+  // console.log('C')
   // Get confirmation of the request.
   const result = await request;
   console.log('result.value', result);
-  return result;
+  // if (result.length === 0) {
+  //   // result.push({content:'hello', id:1})
+  //   console.log(result, 'inside if statement')
+  //}
+  // console.log(result.length)
+  return result?.value;
 };
 
 initdb();
