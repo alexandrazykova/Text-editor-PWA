@@ -6,8 +6,8 @@ Text editor that runs in the browser and functions offline. Single-page applicat
 
 ## Deployed Link
 
-Application can be accessed here https://applicationtextedit-e75241ec92f7.herokuapp.com/
-
+Application can be accessed here [
+](https://applicationtextedit-e75241ec92f7.herokuapp.com/)
 ## Technologies Used
 
 IndexedDB database
