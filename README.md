@@ -6,6 +6,8 @@ Text editor that runs in the browser and functions offline. Single-page applicat
 
 ## Deployed Link
 
+Application can be accessed here https://git.heroku.com/applicationtextedit.git
+
 ## Technologies Used
 
 IndexedDB database
@@ -13,3 +15,4 @@ package idb, which is a lightweight wrapper around the IndexedDB API. It feature
 
 ## Screenshots
 
+[screenshot](/images/screenshot.png)
