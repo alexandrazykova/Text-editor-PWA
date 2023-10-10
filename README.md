@@ -15,4 +15,4 @@ package idb, which is a lightweight wrapper around the IndexedDB API. It feature
 
 ## Screenshots
 
-[screenshot](/images/screenshot.png)
+![screenshot](/images/screenshot.png)
