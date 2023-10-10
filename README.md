@@ -6,7 +6,7 @@ Text editor that runs in the browser and functions offline. Single-page applicat
 
 ## Deployed Link
 
-Application can be accessed here https://git.heroku.com/applicationtextedit.git
+Application can be accessed here [https://git.heroku.com/applicationtextedit.git](https://applicationtextedit-e75241ec92f7.herokuapp.com/)
 
 ## Technologies Used
 
